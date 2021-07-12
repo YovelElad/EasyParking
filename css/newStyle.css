@@ -1,0 +1,2000 @@
+/*---------------General---------------*/
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+p, label, ul, img {
+    direction: rtl;
+}
+
+header, main, footer, nav, section, div {
+    display: block;
+}
+
+#wrapper {
+    width: 700px;
+    height: 403px;
+    margin: 0 auto;
+    background-color: #eeeeee;
+    position: relative;
+}
+
+body {
+    padding-top: 100px;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 54px;
+    position: relative;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);    
+
+}
+
+.clientPic{
+    position: absolute;
+    right: 110px;
+    top: 9px;
+    background-image: url("../images/shlomi.png");
+    width: 39px;
+    height: 39px;
+}
+
+#logo {
+    background-image: url("../images/Logo.png");
+    display: block;
+    position: absolute;
+    right: 23px;
+    top: 8px;
+    width: 32px;
+    height: 45px;
+}
+
+header > nav {
+    position: absolute;
+    bottom: 3px;
+    display: none;
+    bottom: 7px;
+
+}
+
+header > nav > ul {
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+header > nav > ul  li {
+    width: 250px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+header > nav > ul li.selected {
+    color: black;
+}
+
+header > nav > img {
+    position: absolute;
+    right: 250px;
+    top: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 58px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+}
+
+footer > #search {
+    position: absolute;
+    left: 48px;
+    font-size: 18px;
+    top: 22px;
+    font-weight: bold;
+}
+
+footer > #search > img {
+    position: absolute;
+    right: 50px;
+}
+
+footer > nav {
+    position: relative;
+} 
+
+footer > nav > ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+footer > nav > ul  li {
+    width: 130px;
+    text-align: center;
+    list-style-type: none;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+
+footer > nav > ul li.selected {
+    color: black;
+}
+
+footer > img {
+    position: absolute;
+    right: 130px;
+    top: 20px;
+}
+
+hr { 
+    border: none;
+    height: 1px;
+    color: #333; /* old IE */
+    background-color: #cccccc; /* Modern Browsers */
+    width: 70%;
+}
+
+
+
+/*---------------Login---------------*/
+
+#firstPage #logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#firstPage h1 {
+    display: block;
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 240px;
+
+}
+
+#firstPage form {
+    position: absolute;
+    display: block;
+    width: 350px;
+    height: 280px;
+    right: 170px;
+    top: 70px;
+
+}
+
+
+#firstPage form #id {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:20px;
+    font-weight: bold;
+}
+
+#firstPage form #nameInput {
+    position: absolute;
+    top: 55px;
+    width: 70%;
+    left: 55px;
+    background-color: white;
+    border-color: rgb(197, 197, 197);
+}
+
+#firstPage form #password {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:120px;
+    font-weight: bold;
+}
+
+#firstPage form #passwordInput {
+    position: absolute;
+    top: 155px;
+    left: 55px;
+    width: 70%;
+    background-color: white;
+    border-color: rgb(197, 197, 197);
+}
+
+#firstPage button {
+    background-color: gray;
+    border: gray;
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+}
+
+#firstPage .error-message {
+    display: block;
+    position: absolute;
+    bottom: 62px;
+    color: red;
+    font-size: 15px;
+    right: 92px;
+}
+
+#firstPage a {
+    text-decoration: none;
+    color: inherit;
+    position: absolute;
+    bottom: 20px;
+    right: 250px;
+}
+
+
+
+
+
+
+
+/*---------------Register---------------*/
+
+#register h1 {
+    font-size: 28px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+}
+
+#register form  {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 60px;
+    direction: rtl;
+    right: 15px;
+    height: 403px;
+}
+
+#register form #register1 {
+    display: block;
+}
+
+#register form #register2 {
+    display: none;
+}
+
+#register form  select {
+    width: 218px;
+}
+
+#register form  .form-control {
+    width: 218px;
+    direction: ltr;
+}
+
+
+
+#register form button {
+    position: absolute;
+    left:100px;
+    bottom: 60px;
+}
+
+#register #licensePlate {
+    position: absolute;
+    left: 250px;
+    top: 0px;
+}
+
+#register #licensePlateInput {
+    position: absolute;
+    left: 100px;
+    top: 32px;
+
+}
+#register form button {
+    width: 100px;
+    background-color: #d6d6d6;
+    color: black;
+    border: none;
+}
+
+
+#register form #code {
+    direction: rtl;
+    position: absolute;
+    width: 100px;
+    top: 85px;
+    right: 520px;
+}
+
+#register .form-check-input {
+    position: absolute;
+    right: 380px;
+    top: 130px;
+}
+
+
+#register #adminInput{
+    position: absolute;
+    top: 90px;
+}
+
+#register .form-check-label {
+    position: absolute;
+    right: 410px;
+    top: 90px;
+}
+
+
+#register #handiCappedText{
+    position: absolute;
+    top: 130px;
+}
+
+
+
+
+#register form #register2 h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#register form #register2 #hoseNoInput {
+    position: absolute;
+    right: 400px;
+    top: 65px;
+}
+
+#register form #register2 #zipInput {
+    position: absolute;
+    right: 400px;
+    top: 145px;
+    width: 100px;
+}
+
+
+#register form #register2 #prev {
+    position: absolute;
+    right: 20px;
+}
+
+#register form #register2 #hoseNo {
+    position: absolute;
+    right: 400px;
+    top: 30px;
+}
+
+#register form #register2 #zip {
+    position: absolute;
+    right: 400px;
+    top: 115px;
+}
+
+
+
+
+/*---------------Main List---------------*/
+ h1 {
+    direction: rtl;
+    font-size: 15px;
+    position: absolute;
+    right: 193px;
+    top: 10px;
+}
+
+.no-parking-to-show {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 30px;
+    font-size: 18px;
+    display: none;
+}
+
+#mainList .filter {
+    background-color: white;
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+
+#mainList .filtering {
+    position: absolute;
+    right: 150px;
+    top: 2px;
+}
+
+#mainList #closeFiltering {
+    display: none;
+}
+
+#mainList #openFiltering {
+    display: block;
+}
+
+
+#mainList .sort {
+    position: absolute;
+    top: 2px;
+    left: 150px;
+} 
+
+#mainList #closeSort {
+    display: none;
+}
+
+#mainList #openSort {
+    display: block;
+}
+
+#mainList .filter > a > .filterExpand {
+    position: absolute;
+    top: 1px;
+    right: 30px;
+}
+
+#mainList .filter > a > .sortExpand {
+    position: absolute;
+    top: 1px;
+    right: 80px;
+}
+
+#mainList .filter .refresh {
+    position: absolute;
+    left: 10px;
+}
+
+#mainList main {
+    position: relative;
+}
+
+#mainList main ul {
+    list-style-type: none;
+    z-index: -1;
+}
+
+#mainList main ul > li {
+    width: 100%;
+    height: 81px;
+    position: relative;
+}
+
+#mainList main ul li >h2 {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 36px;
+}
+
+#mainList main ul > a > li{
+    width: 100%;
+    height: 81px;
+    background-color: #f7f6f6;
+    position: relative;
+}
+
+#mainList main ul li > p {
+    position: absolute;
+    top: 38px;
+    right: 36px;
+    font-size: 11px;
+}
+
+#mainList main ul > a  img {
+    position: absolute;
+    bottom: 0; 
+}
+
+#mainList main section#available_parking {
+    display: block;
+}
+
+#mainList main section#not_available_parking {
+    display: none;
+}
+
+
+#mainList > #wrapper  main  section.filterNav {
+    position: absolute;
+    width: 216px;
+    height: 145px;
+    background-color: white;
+    top: 0;
+    right: 120px;
+    padding-right: 25px;
+    padding-top:5px ;
+}
+
+#mainList > #wrapper  main  section.sortNav{
+    position: absolute;
+    width: 216px;
+    height: 80px;
+    background-color: white;
+    top: 0;
+    left: 50px;
+    padding-right: 25px;
+    padding-top:5px ;
+    display: none;
+}
+
+#mainList #filterNav {
+    display: none;
+}  
+
+#mainList > #wrapper  main  section.filterNav > ul > li,#mainList > #wrapper main section.sortNav > ul > li {
+    position: relative;
+    height: 24px;
+}
+
+#mainList > #wrapper main section.filterNav > ul > li > img,#mainList > #wrapper main section.sortNav > ul > li > img {
+    position: absolute;
+    bottom: 3px;
+    left: 30px;
+}
+
+#mainList > #wrapper main section.filterNav > ul > img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 7px;
+    right: 5px;
+}
+
+#mainList > #wrapper main section.sortNav > ul > img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    bottom: 62px;
+    right: 5px;
+}
+
+
+#mainList #slider {
+    position: absolute;
+    width: 150px;
+    bottom: 30px;
+
+}
+
+#parkingList {
+    overflow-y: scroll;
+    height: 270px;
+}
+
+#parkingList::-webkit-scrollbar {
+    display: none;
+}
+
+#parkingList {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+
+
+
+
+
+
+
+/*---------------Main Object---------------*/
+#main-object main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 400px;
+}
+
+#main-object .address {
+    position: absolute;
+    top: 64px;
+    right: 279px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#main-object .ellipse {
+    width: 149px;
+    height: 126px;
+    display: block;
+    position: absolute;
+    background-image: url("../images/ellipse.png");
+    top: 109px;
+    left: 276px;
+    text-align: center;
+    padding-top: 23px;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+#main-object .ellipse > p {
+    font-size: 19px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+#main-object .car ,#main-object .p {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 267px;
+}
+
+#main-object .car {
+    background-image: url("../images/car.png");
+    left: 73px;
+}
+
+#main-object .p {
+    background-image: url("../images/p.png");
+    right: 78px;
+}
+
+#main-object .car-info ,#main-object .parking-info {
+    position: absolute;
+    width: 147px;
+    height: 70px;
+    border: 1px solid #000000;
+    direction: rtl;
+    bottom: 20px;
+}
+
+#main-object .car-info p,#main-object .parking-info p {
+    margin-right: 4px;
+}
+
+#main-object .car-info h6,#main-object .parking-info h6 {
+    margin-right: 4px;
+}
+
+#main-object .car-info {
+    left: 20px;
+}
+
+#main-object h6 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#main-object .parking-info {
+    right: 27px;
+}
+
+#main-object .report {
+    width: 81px;
+    height: 81px;
+    display: block;
+    position: absolute;
+    background-image: url("../images/red-ellipse.png");
+    background-repeat: no-repeat;
+    bottom: 20px;
+    left: 311px;
+}
+#main-object .report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+
+#main-object .report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+#main-object #systemMessege p {
+    display: block;
+    position: absolute;
+    top: 100px;
+    width:100%;
+    text-align:center;
+}
+
+#main-object #systemMessege button {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+
+#main-object #systemMessege #okButton {
+    
+    background-color: #46a546;
+    top: 165px;
+    left: 59px;
+    border:none;
+}
+
+#main-object #systemMessege #cancelButton {
+    background-color: #bd362f;
+    top: 165px;
+    right: 59px;
+    z-index: 11;
+    border:none;
+}
+
+#main-object #systemMessege #ok {
+    top: 169px;
+    left: 94px;
+    z-index: 12;
+}
+
+#main-object #systemMessege #cancel {
+    top: 169px;
+    right:94px;
+    z-index: 12;
+}
+
+
+
+
+/*---------------Report Page---------------*/
+#report main {
+    background-color: #EEEEEE;
+    width: 700px;
+    height: 400px;
+}
+
+#report h1 {
+    direction: rtl;
+    position: absolute;
+    font-size: 21px;
+    top: 73px;
+    right: 15px;
+}
+
+#report .false-alarm {
+    top: 131px;
+}
+
+
+#report .true-alarm {
+    top: 163px;
+}
+
+#report .true-alarm , #report .false-alarm {
+    position: absolute;
+    right: 74px;
+}
+
+#report .true-alarm > input, #report .false-alarm > input {
+    left: 100px;
+    top: 2px;
+    position: absolute;
+}
+
+#report .bad-sensor {
+    position: absolute;
+    right: 73px;
+    top: 194px;
+}
+
+#report .bad-sensor > input {
+    position: absolute;
+    left: 130px;
+    top: 2px;
+}
+
+#report .no-access {
+    position: absolute;
+    right: 70px;
+    top: 225px;
+}
+
+#report .no-access > input {
+    position: absolute;
+    left: 130px;
+    top: 2px;
+}
+
+#report h6 {
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    left: 300px;
+    top: 131px;
+    direction: rtl;
+}
+
+#report textarea {
+    resize: none;
+    direction: rtl;
+    position: absolute;
+    top: 170px;
+    left: 160px;
+}
+
+#report .no-use {
+    position: absolute;
+    left: 200px;
+    top: 270px;
+}
+
+#report .no-use > input  {
+    position: absolute;
+    left: 156px;
+    top: 4px;
+}
+
+#report .send {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 103px;
+    height: 27px;
+    text-align: center;
+    background-color: #d6d6d6;
+    padding-top: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 0;
+}
+
+
+
+
+/* /---------------Hamburger---------------/ */
+#hamburger section {
+    position: relative;
+    width: 175px;
+    height: 403px;
+    background-color: #FFFFFF;
+}
+
+#hamburger li {
+    display: block;
+}
+
+.search , .home , .work , .bad-park , .settings, .disconect {
+   position: absolute;
+   left: 36px;
+}
+
+.search a , .home a , .work a  ,.settings a , .disconect a {
+    position: absolute;
+    left: 50px;
+}
+
+#hamburger .search  {
+    top: 103px;
+}
+
+#hamburger .home {
+    top: 133px;
+}
+
+#hamburger .work {
+    top: 163px;
+}
+
+#hamburger .bad-park  {
+    top: 223px;
+    
+}
+
+#hamburger .bad-park a {
+    position: absolute;
+
+    width: 90px;
+    left: 42px;
+}
+
+#hamburger .bad-park a#add-parking{
+    position: absolute;
+
+    width: 90px;
+    left: 25px; 
+}
+
+
+#hamburger .settings {
+    top: 253px;
+}
+
+#hamburger .disconect {
+    top: 283px;
+}
+
+#ham {
+    background-image: url("../images/ham-icon.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 36px;
+    top: 16px;
+    cursor: pointer;
+}
+
+#afterChoose footer > #onMyWayTo {
+    position: absolute;
+    right: 107px;
+    top: 9px;
+}
+
+#afterChoose h1{
+    position: absolute;
+    right: 80px;
+    width: 100px;
+    top: 1px;
+}
+
+#afterChoose footer > #distance {
+    position: absolute;
+    right: 271px;
+    top: 9px;
+} 
+
+#afterChoose footer > article > p {
+    font-size: 14px;
+}
+
+#afterChoose footer > article > h2 {
+    font-size: 19px;
+
+}
+
+#afterChoose footer > #cancelParking {
+    position: absolute;
+    display: block;
+    width: 76px;
+    height: 34px;
+    left: 20px;
+    top: 13px;
+    background-color: #bd362f;
+    border-radius: 13px;
+    text-align: center;
+}
+
+#afterChoose footer > #cancelParking > p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+#afterChoose footer .fa-waze {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 12px;
+    right: 20px;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 288px;
+    width: 700px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none;
+    height: 288px;
+    width: 700px;
+}
+
+.mapouter2 {
+    position: relative;
+    text-align: right;
+    height: 550px;
+    width: 480px;
+}
+
+.gmap_canvas2 {
+    overflow: hidden;
+    background: none;
+    height: 550px;
+    width: 480px;
+}
+
+.fa-map-marker-alt {
+    z-index: 1;
+    position: absolute;
+    color: #0c59cf;
+    top: 250px;
+    left: 300px;
+}
+
+.fa-location-arrow {
+    color: #ee5f5b;
+    position: absolute;
+    top: 290px;
+    left: 270px;
+    z-index: 1;
+
+}
+#afterChoose #systemMessege > h2 {
+    position: absolute;
+    font-size: 17px;
+    display: block;
+    width: 335px;
+    text-align: center;
+    top: 30px;
+}
+
+#afterChoose #systemMessege form{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+#afterChoose #systemMessege form > input {
+    position: absolute;
+    display: block;
+    width: 200px;
+    right: 0;
+}
+
+#afterChoose #systemMessege form > label {
+    position: absolute;
+    display: block;
+    width: 150px;
+    right: 110px;
+}
+
+#afterChoose #systemMessege form > .lable2 {
+    top:25px;
+}
+
+#afterChoose #systemMessege form > .lable3 {
+    top:50px;
+}
+
+#afterChoose #systemMessege #sendButton {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: green;
+    right: 172px;
+    top: 85px;
+    cursor: pointer;
+    border: 0;
+}
+
+#afterChoose #systemMessege #dontSendButton {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: red;
+    right: 60px;
+    top: 85px;
+    cursor: pointer;
+    border:0;
+}
+
+
+#afterChoose #systemMessege > h3 {
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+
+#afterChoose #systemMessege > #send {
+    top: 150px;
+    left: 99px;
+    z-index: 12;
+}
+
+#afterChoose #systemMessege > #dontSend{
+    top: 150px;
+    right:90px;
+    z-index: 12;
+} 
+
+#afterChoose #systemMessege > p {
+    position: absolute;
+    display: block;
+    width: 335px;
+    text-align: center;
+    font-size: 8px;
+    bottom: 15px;
+}
+
+#afterChoose .report {
+    width: 81px;
+    height: 81px;
+    display: block;
+    position: absolute;
+    background-color: #bd362f;
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    bottom: 80px;
+    right: 60px;;
+}
+#afterChoose .report p {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    font-weight: bold;
+    font-size: 19px;
+    color: #FFFFFF;
+}
+
+#afterChoose h2 {
+    direction: rtl;
+}
+
+#map {
+    height: 288px;
+    width: 100%;
+}
+
+
+.system-message  {
+    position: absolute;
+    width: 335px;
+    height: 207px;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    left: 185px;
+    top: 105px;
+    z-index: 10;
+    border-radius: 7px;
+    display: none;
+}
+
+.system-message h2 {
+    font-size:20px;
+    display:block;
+    width:100%;
+    text-align:center;
+    position:absolute;
+    top:50px;
+
+}
+
+.system-message a {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+.system-message #sendReportButton {
+    background-color: #46a546;
+    top: 165px;
+    left: 59px;
+}
+
+.system-message #dontSendReportButton {
+    background-color: #bd362f;
+    top: 165px;
+    right: 59px;
+    z-index: 11;
+}
+
+
+.system-message h3 {
+    display:block;
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+
+.system-message #sendReport {
+    top: 169px;
+    left: 97px;
+    z-index: 12;
+}
+
+.system-message #dontSendReport{
+    top: 169px;
+    right:97px;
+    z-index: 12;
+} 
+
+#reportSent h2 {
+    top: 60px;
+}
+
+#reportSent #closeButton {
+    background-color: #46a546;
+    top: 165px;
+    left: 115px;
+}
+
+#reportSent #close {
+    top: 169px;
+    left: 152px;
+    z-index: 12;
+}
+
+
+
+
+
+
+/*---------------Search---------------*/
+#search-page .form-control {
+    width: 60%;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 8px;
+    left: 90px;
+    direction: rtl;
+}
+
+#search-btn {
+    background-image: url("../images/search-icon.png");
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 100px;
+    top: 17px;
+
+}
+
+#search-page main {
+    position: absolute;
+    margin: 0;
+    width: 100%;
+
+}
+
+#search-page main ul {
+    padding: 0;
+    height: 290px;
+}
+
+#search-page main li {
+    position: relative;
+    display: block;
+    height: 62px;
+    width: 100%;
+}
+
+#search-page main a h2 {
+    font-size: 14px;
+    position: absolute;
+    right: 16px;
+    top: 23px;
+    font-weight: bold;
+}
+
+#search-page main a h2.homeWork {
+    top: 11px;
+}
+
+#search-page main a p {
+    position: absolute;
+    font-size: 10px;
+    top: 35px;
+    right: 16px;
+}
+
+#search-page #willFade {
+    display:block;
+    width:700px;
+    height:400px;
+}
+
+/*---------------Personal Details---------------*/
+#personal_details h1 {
+    display: block;
+    position: absolute;
+    font-size: 22px;
+    right: 100px;
+    top: 20px;
+}
+
+#personal_details p {
+    position: absolute;
+    right: 60px;
+
+}
+
+#personal_details p#name  {
+    top: 60px;
+}
+
+#personal_details p#mail  {
+    top: 80px;
+}
+
+#personal_details p#num  {
+    top: 100px;
+}
+
+#personal_details p#address  {
+    top: 120px;
+}
+
+#personal_details  {
+    position: absolute;
+    width: 335px;
+    height: 207px;
+    background: rgb(247, 247, 247);
+    background: -moz-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -webkit-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -o-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: -ms-linear-gradient(89deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    background: linear-gradient(179deg, rgb(247, 247, 247) 17%, rgb(181, 181, 181) 100%);
+    left: 185px;
+    top: 105px;
+    z-index: 10;
+    border-radius: 7px;
+    display: none;
+}
+
+#personal_details a {
+    position: absolute;
+    display: block;
+    width: 101px;
+    height: 26px;
+    border-radius: 13px;
+}
+
+
+ #personal_details #editButton {
+    background-color: #46a546;
+    top: 165px;
+    left: 59px;
+}
+
+#personal_details #backButton {
+    background-color: #bd362f;
+    top: 165px;
+    right: 59px;
+    z-index: 11;
+}
+
+
+#personal_details h3 {
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+
+
+#personal_details #edit {
+    top: 169px;
+    left: 97px;
+    z-index: 12;
+}
+
+#personal_details #back{
+    top: 169px;
+    right:97px;
+    z-index: 12;
+} 
+
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    /*---------------General---------------*/
+    #wrapper {
+        width: 480px;
+        height: 700px;
+    }
+    header {
+        height: 95px;
+    }
+
+    #logo {
+        top: 15px;
+        right: 14px ;
+    }
+    .clientPic {
+        top: 16px;
+        left: 375px;
+    }
+    header > nav {
+        display: block;
+    }
+
+    header > nav .clientPic {
+        display:none;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+    header > h1 {
+        right:135px;
+        top:15px;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+
+    footer > nav , footer > img{
+        display: none;
+    }
+
+
+
+    /*--------------Register-----------------*/
+    #register form  {
+        right: 15px;
+        height: 700px;
+    }
+    
+
+    #register form button {
+        left: 35px;
+        bottom: 70px;
+    }
+    
+    #register form #register2 h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #register form #register2 #hoseNoInput {
+        width: 80px;
+    }
+    
+    #register form #register2 #zipInput {
+        width: 100px;
+    }
+    
+
+    #register form #register2 #prev {
+        position: absolute;
+        right: 20px;
+    }
+    
+    #register form #register1 .form-check-input {
+
+        right: 0;
+    }
+    
+    #register form #register1 .form-check-label {
+        right: 30px;
+    }
+    
+ 
+
+    #register #licensePlate {
+        right: 0px;
+        top: 245px;
+    }
+    
+    #register #licensePlateInput {
+        right: 0px;
+        top: 279px;
+    
+    }
+
+    #register .form-check-input {
+        right: 0px;
+        top: 450px;
+    }
+    
+    
+    #register #adminInput{
+        top: 400px;
+    }
+
+    #register form #code {
+        width: 100px;
+        height: 40px;
+        top: 390px;
+        right: 140px;
+    }
+    
+    #register .form-check-label {
+        right: 0px;
+        top: 400px;
+    }
+    
+    
+    #register #handiCappedText{
+        top: 450px;
+    }
+
+    
+    #register form #register2 #hoseNoInput {
+        right: 0px;
+        top: 240px;
+    }
+    
+    #register form #register2 #zipInput {
+        right: 0px;
+        top: 320px;
+        width: 100px;
+    }
+    
+    
+    #register form #register2 #prev {
+        position: absolute;
+        right: 20px;
+    }
+    
+    #register form #register2 #hoseNo {
+        right: 0px;
+        top: 210px;
+    }
+    
+    #register form #register2 #zip {
+        right: 0px;
+        top: 290px;
+    }
+
+    
+    /*---------------Search---------------*/
+
+    #search-page header {
+        width: 480px;
+    }
+
+    #search-page .form-control {
+        width: 50%;
+        left: 110px;
+        bottom: 25px;
+    }
+
+    #search-page #logo {
+        top: 30px;
+    }
+
+    #search-page .clientPic {
+        top: 30px;
+    }
+
+
+
+
+
+
+
+    /*---------------Main List---------------*/
+    #mainList main > ul > a.hideInstance {
+        display: block;
+    }
+
+    #mainList .filtering {
+        position: absolute;
+        right: 71px;
+        top: 2px;
+    }
+    
+    #mainList .sort {
+        position: absolute;
+        top: 2px;
+        left: 110px;
+    } 
+
+    #mainList h1 {
+        top: 20px;
+        right: 131px;
+    }
+
+    #mainList main > ul li > p , #mainList main > ul li > h2 {
+        right: 20px;
+    }
+
+    #mainList > #wrapper  main  section.filterNav {
+        right: 20px;
+    }
+
+    #parkingList {
+        height: 500px;
+    }
+
+
+
+
+    /*---------------Main Object---------------*/
+    #main-object main {
+        width: 480px;
+        height: 700px;
+    }
+
+
+    #main-object .address {
+        right: 125px;
+        top: 97px;
+        width: 230px;
+        height: 23px;
+        text-align: center;
+    }
+
+    #main-object .ellipse { 
+        background-image: url("../images/mobile-ellipse.png");
+        height: 153px;
+        width: 176px;
+        top: 170px;
+        left: 152px;
+    }
+
+    .ellipse > p {
+        padding-top: 30px;
+     }
+
+   
+     #main-object .car { 
+        width: 50px;
+        height: 50px;
+         left: 80px;
+         top: 396px;
+         background-image: url("../images/mobile-car.png");
+     }
+
+     #main-object .p {
+         right: 79px;
+         width: 32px;
+         height: 40px;
+         top: 405px;
+         background-image: url("../images/p.png");
+     }
+
+     #main-object .car-info ,#main-object .parking-info {
+        width: 160px;
+        height: 81px;
+        bottom: 171px;
+    }
+
+    #main-object .report {
+        width: 99px;
+        height: 99px;
+        background-image: url("../images/mobile-red-ellipse.png");
+        left: 190px;
+    }
+
+    #main-object .report p {
+        left: 23px;
+        top: 36px;
+        width: 53px;
+        height: 21px;
+        text-align: center;
+    }
+
+    #main-object .car-info p,#main-object .parking-info p {
+        margin-top: 3px;
+    }
+    
+    #main-object .car-info h6,#main-object .parking-info h6 {
+        margin-top: 3px;
+    }
+
+
+    /*---------------Hamburger---------------*/
+    #hamburger section {
+        width: 244px;
+        height: 700px;
+    }
+
+    .search , .home , .work , .bad-park , .settings, .disconect {
+        left: 39px;
+     }
+
+     .search a , .home a , .work a , .bad-park a ,.settings a , .disconect a {
+        left: 55px;
+    }
+
+     #hamburger .search  {
+        top: 99px;
+    }
+    
+    #hamburger .home {
+        top: 146px;
+    }
+    #hamburger .work {
+        top: 193px;
+    }
+    
+    #hamburger .bad-park  {
+        top: 289px;
+    }
+    
+    #hamburger .settings {
+        top: 336px;
+    }
+    
+    #hamburger .disconect {
+        top: 385px;
+    }
+
+    #ham {
+        left: 36px;
+        top: 25px;
+    }
+
+/*---------------After Choose(map)---------------*/
+
+    #afterChoose #car {
+        top: 465px;
+        left: 145px;
+    }
+
+    #afterChoose .fa-map-marker-alt {
+        top: 415px;
+        left: 170px;
+    }
+
+    #afterChoose #systemMessege {
+        top: 270px;
+        left: 76px;
+    }
+    #map {
+        height: 550px;
+    }
+
+
+   /*--------------Login-----------------*/
+    #firstPage h1 {
+        top:120px;
+        left:140px;
+    }
+
+    #firstPage form {
+        /*  position:absolute; */
+        top:220px;
+        right:60px; 
+    } 
+    #firstPage a {
+        bottom:100px;
+        right:140px;
+    }
+
+
+    /*---------------Report Page---------------*/
+    #report main {
+        width: 480px;
+        height: 700px;
+    }
+    
+    #report h1 {
+        top: 84px;
+    }
+    
+    
+    #report h6 {
+        left: 380px;
+        top: 300px;
+    }
+    
+    #report textarea {
+        top: 330px;
+        left: 211px;
+    }
+    
+    #report .no-use {
+        left: 277px;
+        top: 470px;
+    }
+
+
+
+/* ----------------system-message------------------- */
+
+.system-message , #personal_details  {
+    top: 270px;
+    left: 76px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
+       /*---------------General---------------*/
+       #wrapper {
+        width: 375px;
+        height: 812px;
+    }
+
+    #logo {
+        right: 7px ;
+    }
+    .clientPic {
+        left: 280px;
+    }
+
+    header > nav > ul {
+        width: 439px;
+    }
+
+        header > h1 {
+        right:115px;
+        top:15px;
+    }
+
+
+
+    /*---------------Main List---------------*/
+
+    #mainList .filtering {
+        right: 20px;
+    }
+    
+
+    #mainList > #wrapper  main  section.filterNav{
+        right: 0px;
+    }
+
+    #parkingList {
+        height: 612px;
+    }
+
+
+
+    /*---------------Main Object---------------*/
+    #main-object main {
+        width: 375px;
+        height: 812px;
+    }
+
+
+    #main-object .address {
+        right: 70px;
+    }
+
+    #main-object .ellipse { 
+        left: 110px;
+    }
+
+     #main-object .car-info ,#main-object .parking-info {
+        bottom: 270px;
+    }
+
+    #main-object .report {
+        width: 120px;
+        height: 120px;
+        left: 138px;
+        bottom: 65px;
+    }
+
+    /*---------------After Choose(map)---------------*/
+
+
+    #afterChoose #car {
+        top: 465px;
+        left: 145px;
+    }
+
+    #afterChoose .fa-map-marker-alt {
+        top: 415px;
+        left: 170px;
+    }
+
+    #afterChoose #systemMessege {
+        top: 270px;
+        left: 20px;
+    }
+
+    #map {
+        height: 700px;
+    }
+    
+    #afterChoose footer > #distance {
+        right: 200px;
+    }
+
+
+           /*--------------Login-----------------*/
+           #firstPage h1 {
+            top:120px;
+            left:77px;
+        }
+    
+        #firstPage form {
+            position:absolute;
+            top:220px;
+            right:20px; 
+        } 
+         #firstPage button {
+             position: absolute;
+             bottom:-40px;
+             left:153px;
+            
+         }
+         #firstPage a {
+            bottom:200px;
+            right:94px;
+        }
+        /*---------------Search---------------*/
+
+        #search-page header {
+            width: 375px;
+        }
+        
+        #search-page .form-control {
+            width: 53%;
+            left: 70px;
+        }
+
+        /*---------------Report Page---------------*/
+    #report main {
+        width: 375px;
+        height: 812px;
+    }
+
+
+    #report h6 {
+        left: 274px;
+    }
+
+    #report textarea {
+        left: 110px;
+    }
+
+    #report .no-use {
+        left: 180px;
+    }
+
+    /*--------------system-message-----------------*/
+
+    .system-message , #personal_details   {
+        top: 270px;
+        left: 20px
+    }
+}

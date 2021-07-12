@@ -1,0 +1,192 @@
+#map {
+    height: 403px;
+    width: 100%;
+    }
+        
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+        
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+        
+  #infowindow-content {
+    display: none;
+  }
+        
+  #map #infowindow-content {
+    display: inline;
+  }
+        
+  .pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+  }
+        
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+    font-weight: 300;
+  }
+        
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    font-size: 25px;
+    background-color: #4d90fe;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+        
+  #target {
+    width: 345px;
+  }
+  #wrapper {
+          width: 700px;
+          height: 403px;
+          margin: 0 auto;
+          background-color: #eeeeee;
+          /* background-color: blue; */
+          position: relative;
+  }
+  
+  
+  body {
+    padding-top: 100px;
+    position: relative;
+  }
+  
+  #register form button {
+    width: 100px;
+    background-color: #d6d6d6;
+    color: black;
+    border: none;
+  }
+  #next {
+    position: absolute;
+    left:20px;
+    bottom: 10px;
+    z-index: 1;
+  }
+  
+  
+  #admin-form {
+    display: none;
+    direction: rtl;
+  }
+  
+  #xValue {
+    display: none;
+  }
+  
+  #yValue {
+    display: none;
+  }
+  
+  #admin-form h1 {
+    font-size: 28px;
+    position: relative;
+    top: 15px;
+    right: 15px;
+    font-weight: bold;
+  }
+  
+  
+  .mb-3 {
+    padding-top: 17px;
+    width: 250px;
+    padding-right: 20px;
+  }
+  
+  #submit {
+    position: absolute;
+    left: 35px;
+    width: 100px;
+    background-color: #d6d6d6;
+    color: black;
+    border: none;
+  }
+  
+  
+  @media (max-width:1000px) {
+    #wrapper {
+      width: 480px;
+      height: 700px;
+    }
+      #map {
+        height: 700px;
+    }
+  
+    #pac-input {
+      width: 190px;
+    }
+  
+    .mb-3 {
+      padding-top: 60px;
+      width: 250px;
+      padding-right: 20px;
+      font-size: 20px;
+    }
+  
+    
+    #admin-form h1 {
+    font-size: 40px;
+    padding-top: 50px;
+    }
+  
+    #submit {
+      left: 35px;
+      bottom: 15px;
+      width: 100px;
+    }
+    
+  }
+  
+  @media (max-width:800px) {
+    #wrapper {
+      width: 375px;
+      height: 812px;
+    }
+  
+    #map {
+      height: 812px;
+    }
+  
+    #pac-input {
+      width: 120px;
+    }
+  
+  }

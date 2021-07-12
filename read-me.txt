@@ -1,0 +1,55 @@
+הערה חשובה! 
+כאשר משתמשים בשרת בעברית זה לא מסתנכרן עם העברית של הדאטה ביס. לכן על מנת להרשם למערכת אין להשתמש ברווחים בשם משתמש. אם משתמשים בלוקאל הוסט, אין בעיה
+
+
+for regular user : 
+שם משתמש:שלומי
+סיסמא: 123
+user_id=49
+for admin user:
+שם משתמש: מנחם
+סיסמא: 1515
+user_id = 50
+
+if you want to register as an admin user, the password is 555
+
+the app is only on  car dashboard , and phones, there are 3 sizes of wrapper
+
+as admin :
+you will see only the reported parking, when you choose parking it will open report page, 
+choose the דיווח אמת and הורד מזמינות will delete the parking from data base.
+choose דיווח שווא wiil return the parking to the user interface
+you can add new parking by click on the hamburger and הוסף חניה, first of all input the address in the map. (will get the coordinates for the database)
+after that fill the corret info in the next page. when you finish the user will see the new parking.
+
+as user:
+you can choose parking, when you'll get there it will open system message enter the time that you will spend there, the parking will no longer will seen in the user map, but! if you choose הצג חניות and then מתפנות בקרוב he will be able to see.
+the user can choose the ui of map , or ui of list
+the user have חיפוש bar
+the user can report for bad parking spot, this will remove the parking from user view and remove it the admin map/list view.
+the user can edit his personal details by clicking on his icon
+
+flow for check : 
+כניסה , שם משתשמש שלומי בן שבת
+סיסמא : 123
+נכנסים לעמוד רשימה
+נעבור למפה
+נלחץ על התמונה של המשתמש, נערוך פרט מסוים.
+לאחר מכן יחזיר אתכם לעמוד רשימה, משם נעבור למפה שוב ונבחר חניה.
+נשמור חניה (הזמן הדיפולטי להמתנה הוא 30 שניות למען ההצגה שלנו והסבר על העמוד בפרזטנציה, בפועל זה משך הזמן שיקח ללקוח להגיע לחניה)
+נבחר טווח זמנים.
+נלחץ על הצג חניות:מתפנות בקרוב
+ללחוץ על אחת החניות.
+לנסות לשמור אותה
+לבחור שוב חניה (אפשר להשתמש בכפתור החיפוש שמבצע חיפוש א-סיכרוני בתוך המערכת)
+ללחוץ על שמור חניה, ואז צד ימין למטה על דווח.
+ללחוץ על המבורגר ואז על התנתק.
+כניסה עם : מנחם יצחק סיסמא: 1515 (כניסה של משתשמ מסוג אדמין)
+החניות שמוצגות כעת הן חניות שדווחו ע"י משתמשים. לחיצה על אחת החניות תשלח אותנו לטופס מלוי דו"ח על החנייה.
+לחיצה על דיווח שווא יחזיר את החניה לזמינות.
+לחיצה על אחת החניות ואז על דיווח אמת וגם לחיצה על הורדה מזמינות(ימחק מהדאטה בייס)
+לחיצה על המבורגר ואז על הוספת חניה
+בשורת החיפוש להזין כתובת בת"א,ללחוץ על הבא צד שמאל למטה.
+להכניס את הפרטים על החניה, בגודל מספר שתבחרו. (החניה תתווסף למפה של היוזרים בתור חניה פנויה).
+
+
